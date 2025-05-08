@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rndr-edson.github.io/edsonportfolio/sitemap.xml
