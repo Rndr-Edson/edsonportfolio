@@ -1,903 +1,1234 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>RANDRIARIMANANA EDSON Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="favicon.png" rel="icon">
- 
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap-icons.css" rel="stylesheet">
-  <link href="aos.css" rel="stylesheet">
-  <link href="glightbox.min.css" rel="stylesheet">
-  <link href="swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-       
-        <h1 class="sitename">RANDRIARIMANANA EDSON</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">ACCEUIL<br></a></li>
-          <li><a href="#about">APROPOS</a></li>
-          <li><a href="#services">DIPLOMES</a></li>
-          <li><a href="#portfolio">CENTRE D'INTERET</a></li>
-          <li class="dropdown"><a href="#"><span>RETOUR</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <!--  <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>-->
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio professionnel de RANDRIARIMANANA EDSON - Communication Numérique et Management du Projet"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, communication numérique, management de projet, RANDRIARIMANANA EDSON"
+    />
+    <title>RANDRIARIMANANA EDSON - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#3b82f6", secondary: "#10b981" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Poppins', sans-serif;
+          scroll-behavior: smooth;
+      }
+      .progress-bar {
+          position: relative;
+          height: 8px;
+          border-radius: 4px;
+          background-color: #e5e7eb;
+          overflow: hidden;
+      }
+      .progress-bar-fill {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background-color: #3b82f6;
+          border-radius: 4px;
+          width: 0;
+          transition: width 1.5s ease-out;
+      }
+      .fade-in {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+      .fade-in.visible {
+          opacity: 1;
+          transform: translateY(0);
+      }
+      .slide-in-left {
+          opacity: 0;
+          transform: translateX(-50px);
+          transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+      .slide-in-left.visible {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      .slide-in-right {
+          opacity: 0;
+          transform: translateX(50px);
+          transition: opacity 0.8s ease, transform 0.8s ease;
+      }
+      .slide-in-right.visible {
+          opacity: 1;
+          transform: translateX(0);
+      }
+      .timeline-item {
+          position: relative;
+          padding-left: 28px;
+          margin-bottom: 24px;
+      }
+      .timeline-item::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 6px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: #3b82f6;
+          z-index: 1;
+      }
+      .timeline-item::after {
+          content: '';
+          position: absolute;
+          left: 5px;
+          top: 18px;
+          width: 2px;
+          height: calc(100% + 12px);
+          background-color: #e5e7eb;
+      }
+      .timeline-item:last-child::after {
+          display: none;
+      }
+      .portfolio-item {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .portfolio-item:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      .nav-link {
+          position: relative;
+          transition: color 0.3s ease;
+      }
+      .nav-link::after {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: #3b82f6;
+          transition: width 0.3s ease;
+      }
+      .nav-link:hover::after, .nav-link.active::after {
+          width: 100%;
+      }
+      .nav-link:hover, .nav-link.active {
+          color: #3b82f6;
+      }
+      input, textarea {
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      input:focus, textarea:focus {
+          border-color: #3b82f6;
+          box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+          outline: none;
+      }
+      .btn-primary {
+          transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .btn-primary:hover {
+          background-color: #2563eb;
+          transform: translateY(-2px);
+      }
+      .btn-primary:active {
+          transform: translateY(0);
+      }
+      .filter-btn {
+          transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .filter-btn.active {
+          background-color: #3b82f6;
+          color: white;
+      }
+      .loading-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.9);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+          transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+      .loader {
+          width: 48px;
+          height: 48px;
+          border: 5px solid #e5e7eb;
+          border-bottom-color: #3b82f6;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+      }
+      .success-message {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background-color: #10b981;
+          color: white;
+          padding: 16px 24px;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          z-index: 9999;
+          opacity: 0;
+          transform: translateY(-20px);
+          transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+      .success-message.show {
+          opacity: 1;
+          transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loader"></div>
     </div>
-  </header>
 
-  <main class="main">
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+      <p>Votre message a été envoyé. Merci!</p>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed top-0 left-0 w-full z-10">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="#accueil" class="text-2xl font-semibold text-gray-800"
+          >RANDRIARIMANANA <span class="text-primary">EDSON</span></a
+        >
+        <nav class="hidden md:flex space-x-8">
+          <a href="#accueil" class="nav-link active text-gray-700 font-medium"
+            >ACCUEIL</a
+          >
+          <a href="#apropos" class="nav-link text-gray-700 font-medium"
+            >A PROPOS</a
+          >
+          <a href="#diplomes" class="nav-link text-gray-700 font-medium"
+            >DIPLÔMES</a
+          >
+          <a href="#interets" class="nav-link text-gray-700 font-medium"
+            >CENTRE D'INTÉRÊT</a
+          >
+          <a href="#contact" class="nav-link text-gray-700 font-medium"
+            >CONTACT</a
+          >
+        </nav>
+        <button
+          class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+          id="mobileMenuBtn"
+        >
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        class="md:hidden bg-white w-full absolute top-full left-0 shadow-md hidden"
+        id="mobileMenu"
+      >
+        <div class="container mx-auto px-4 py-2 flex flex-col space-y-4">
+          <a href="#accueil" class="py-2 text-gray-700 font-medium">ACCUEIL</a>
+          <a href="#apropos" class="py-2 text-gray-700 font-medium">A PROPOS</a>
+          <a href="#diplomes" class="py-2 text-gray-700 font-medium"
+            >DIPLÔMES</a
+          >
+          <a href="#interets" class="py-2 text-gray-700 font-medium"
+            >CENTRE D'INTÉRÊT</a
+          >
+          <a href="#contact" class="py-2 text-gray-700 font-medium">CONTACT</a>
+        </div>
+      </div>
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/edson.jpeg" alt="edson" data-aos="fade-in">
-
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>EDSON</h2>
-        <p><span class="typed" data-typed-items="RANDRIARIMANANA"></span></p>
+    <section
+  id="accueil"
+  class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-blue-50 to-indigo-50 bg-[url('randria3.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0 slide-in-left">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          EDSON <span class="text-primary">RANDRIARIMANANA</span>
+        </h1>
+        <h2 class="text-xl md:text-2xl text-gray-600 mb-6">
+          Communication Numérique & Management du Projet
+        </h2>
+        <div class="space-y-3 mb-8">
+          <div class="flex items-center">
+            <div class="w-10 h-10 flex items-center justify-center text-primary">
+              <i class="ri-mail-line ri-lg"></i>
+            </div>
+            <span class="ml-3 text-gray-700">edsonrandiarimanana646@gmail.com</span>
+          </div>
+          <div class="flex items-center">
+            <div class="w-10 h-10 flex items-center justify-center text-primary">
+              <i class="ri-phone-line ri-lg"></i>
+            </div>
+            <span class="ml-3 text-gray-700">034 38 158 96 / 032 91 191 36</span>
+          </div>
+          <div class="flex items-center">
+            <div class="w-10 h-10 flex items-center justify-center text-primary">
+              <i class="ri-map-pin-line ri-lg"></i>
+            </div>
+            <span class="ml-3 text-gray-700">Lot: 0307/760 B-Soanierana Fianarantsoa</span>
+          </div>
+        </div>
+        <a
+          href="#contact"
+          class="inline-block bg-primary text-white py-3 px-6 !rounded-button font-medium hover:bg-blue-600 transition-colors whitespace-nowrap"
+        >
+          Me Contacter
+        </a>
       </div>
+      <div class="md:w-1/2 slide-in-right">
+        <img
+          src="randria.jpg"
+          alt="RANDRIARIMANANA EDSON"
+          class="w-64 h-64 md:w-80 md:h-80 object-cover object-top rounded-full mx-auto shadow-lg border-4 border-white"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
-    </section><!-- /Hero Section -->
 
+    <!-- Skills Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 fade-in">
+          Compétences Informatiques
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div class="fade-in">
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700">HTML</span>
+                <span class="text-primary font-medium">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700">CSS</span>
+                <span class="text-primary font-medium">80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700">JavaScript</span>
+                <span class="text-primary font-medium">55%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="55%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700">Adobe Photoshop</span>
+                <span class="text-primary font-medium">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700">Adobe Premier</span>
+                <span class="text-primary font-medium">75%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="75%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="fade-in">
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700">Adobe XD</span>
+                <span class="text-primary font-medium">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700">Microsoft Access</span>
+                <span class="text-primary font-medium">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700">Microsoft Excel</span>
+                <span class="text-primary font-medium">80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700"
+                  >Microsoft PowerPoint</span
+                >
+                <span class="text-primary font-medium">87%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="87%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span class="font-medium text-gray-700">Microsoft Word</span>
+                <span class="text-primary font-medium">95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-bar-fill" data-width="95%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- About Section -->
-    <section id="about" class="about section" >
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100" >
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
-                <img src="assets/img/randria.jpg" class="img-fluid" alt="edson">
-              </div>
-              <div class="col-lg-7 about-info">
-                <p><strong style="color: rgb(13, 14, 13);">Nom: </strong> <span>RANDRIARIMANANA</span></p>
-                <p><strong style="color: rgb(13, 14, 13);">Prénom: </strong> <span>EDSON</span></p>
-                <p><strong style="color: rgb(13, 14, 13);">Email: </strong> <span>edsonrandiarimanana646@gmail.com</span></p>
-                <p><strong style="color: rgb(13, 14, 13);">Phone: </strong> <span>034 38 158 96 / 032 91 191 36</span></p>
-              </div>
-            </div>
-
-            <div class="skills-content skills-animation">
-
-              <h5 style="text-decoration: underline;"><strong >
-                Competences informatiques </strong></h5>
-
-                <div class="progress">
-                  <span class="skill" ><span>HTML</span> <i class="val">90%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-
-                <div class="progress">
-                  <span class="skill" ><span>CSS</span> <i class="val">80%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-
-                <div class="progress">
-                  <span class="skill" ><span>Java-Script</span> <i class="val">55%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-
-                <div class="progress">
-                  <span class="skill" ><span>Adobe Photoshop</span> <i class="val">90%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-
-                <div class="progress">
-                  <span class="skill" ><span>Adobe Premier</span> <i class="val">75%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-
-                <div class="progress">
-                  <span class="skill" ><span>Adobe XD</span> <i class="val">85%</i></span>
-                  <div class="progress-bar-wrap">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="85"></div>
-                  </div>
-                </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill" ><span>Microsoft Acces</span> <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="95"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill" ><span>Microsoft Excel</span> <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill" ><span>Microsoft PowerPoint</span> <i class="val">87%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill" ><span>Microsoft Word</span> <i class="val">95%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-             
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="about-me">
-              <h4>A propos de moi</h4>
+    <section id="apropos" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2
+            class="text-3xl font-bold text-center text-gray-800 mb-12 fade-in"
+          >
+            À Propos de Moi
+          </h2>
+          <div class="bg-white p-8 rounded-lg shadow-sm fade-in">
+            <h3 class="text-xl font-semibold text-primary mb-4">
+              Travailler dans le monde du divertissement en combinant la
+              communication Organisationnelle et le marketing, un projet à la
+              fois
+            </h3>
+            <div class="text-gray-700 space-y-4">
               <p>
-                <Strong style="color: rgb(68, 68, 75);">
-                Travailler dans le monde du divertissement en combinant la communication Organisationnelle et le marketing , un projet à la fois
-               </Strong>
+                Étant étudiant en Master 1 de communication numérique et
+                management du projet, mon rêve est de fusionner ma passion pour
+                la communication et le marketing avec le monde du
+                divertissement. Je suis fasciné par la façon dont les marques et
+                les artistes peuvent se connecter avec leur public.
               </p>
               <p>
-                <strong >  Etant étudiant en Master 1 de <em>communication numérique et management du projet</em>, mon rêve est de fusionner ma passion pour la communication et le marketing avec le monde du divertissement.
-                  Je suis fasciné par la façon dont les marques et les artistes peuvent se connecter avec leur public.
-              Les stratégies digitales et la coordination de projets, je me spécialise en communication numérique et management de projet. Mon parcours m’a permis de développer des compétences solides en gestion d’équipe, planification stratégique, création de contenu, et pilotage de campagnes digitales. Je suis à la recherche de nouveaux défis pour contribuer à des projets innovants et à forte valeur ajoutée. 
-                  Mon objectif : concevoir et piloter des projets digitaux qui ont du sens, qui engagent et qui performent. Chaque projet est pour moi une opportunité d’apprendre, de fédérer et d’innover.
-
-                   
-                  <legend>À l’intersection du digital et de la gestion, j’apporte une double compétence : communiquer avec impact et piloter des projets avec méthode.</legend>
-                </Strong> 
-                </p>
+                Les stratégies digitales et la coordination de projets, je me
+                spécialise en communication numérique et management de projet.
+                Mon parcours m'a permis de développer des compétences solides en
+                gestion d'équipe, planification stratégique, création de
+                contenu, et pilotage de campagnes digitales.
+              </p>
               <p>
-
+                Je suis à la recherche de nouveaux défis pour contribuer à des
+                projets innovants et à forte valeur ajoutée. Mon objectif :
+                concevoir et piloter des projets digitaux qui ont du sens, qui
+                engagent et qui performent. Chaque projet est pour moi une
+                opportunité d'apprendre, de fédérer et d'innover.
+              </p>
+              <p>
+                À l'intersection du digital et de la gestion, j'apporte une
+                double compétence : communiquer avec impact et piloter des
+                projets avec méthode.
               </p>
             </div>
           </div>
         </div>
-
       </div>
-
-    </section><!-- /About Section -->
-
-    <!--
-    <section id="resume" class="resume section">
-
-      
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div>
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Sumary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>-->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>DIPLOMES , FORMATIONS</h2>
-        <p><strong>
-          Travailler dans le monde du divertissement en combinant la communication Organisationnelle et le marketing , un projet à la fois </strong></p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" >
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-book"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Master 1 en Cours   2024-2025</h3>
-              </a>
-              <p><strong>Communication Numerique et Management du Projet. L'Ecole de Management et de l'Innovation Technologique Fianarantsoa (EMIT Fianarantsoa).</strong></p>
-            </div>
-          </div><!-- End Service Item -->
-          
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-mortarboard"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Licence      2024</h3>
-              </a>
-              <p><strong>Licence en Relations Publics et Communication Organisationnel. L'Ecole de Management et de l'Innovation Technologique Fianarantsoa (EMIT Fianarantsoa).</strong></p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-journal-code"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Formation Licence 3    2023-2024</h3>
-              </a>
-              <p><strong>Formation en Relations Publics et Communication Organisationnel à l'EMIT Fianarantsoa</strong></p>
-            </div>
-          </div><!-- End Service Item -->
-          
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" >
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-book"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Licence 2   2021-2023</h3>
-              </a>
-              <p><strong>Formation en Relation Publics et Multimedia.L'Ecole de Management et de l'Innovation Technologique Fianarantsoa (EMIT Fianarantsoa).</strong></p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" >
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-book"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Licence 1   2021-2022</h3>
-              </a>
-              <p><strong>Formation en Relation Publics et Multimedia.L'Ecole de Management et de l'Innovation Technologique Fianarantsoa (EMIT Fianarantsoa).</strong></p>
-            </div>
-          </div><!-- End Service Item -->
-
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-mortarboard"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Baccalauréat Générale Série A2  2021</h3>
-              </a>
-              <p><strong>Diplome de Baccalauréat Générale au Lycée Catholique Lucien Botovasoa  (LCLB Vangaindrano).</strong></p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-<!--
     </section>
 
-    
-    <section id="stats" class="stats section accent-background">
-
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
-              <p>Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
-              <p>Awards</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>-->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Photo</h2>
-        <p>Centre d'intéret et passion </p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Tous</li>
-            <li data-filter=".filter-app">Moi</li>
-            <li data-filter=".filter-product">Mon nourture prefere</li>
-            <li data-filter=".filter-branding">Mon activite</li>
-            <li data-filter=".filter-books">Podcasts divertissement</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/randria3.jpg" class="img-fluid" alt="edson">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/Hen‘omby-ritra.jpg" class="img-fluid" alt="nouriture1">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/wade 1.jpg" class="img-fluid" alt="NBApassion1">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/CKO passion.JPG" class="img-fluid" alt="Podcast1">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/Randria1.jpeg" class="img-fluid" alt="edson">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/Henomby-ritra-sy-Tsaramaso-Madagascar.jpg" class="img-fluid" alt="nourture2">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/wade 2.jpg" class="img-fluid" alt="NBApassion2">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/Planeterap passion.JPG" class="img-fluid" alt="Podcast2">
-              <div class="portfolio-info">
-                
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/randria2.jpg" class="img-fluid" alt="edson3">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/images.jpeg" class="img-fluid" alt="nourture3">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/wade 3.jpg" class="img-fluid" alt="NBApassion4">
-              <div class="portfolio-info">
-               
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="assets/img/portfolio/Podcast clique passion 2.JPG" class="img-fluid" alt="Podcast3">
-              <div class="portfolio-info">
-                
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!--
-    <section id="pricing" class="pricing section">
-
-      
-      <div class="container section-title" data-aos="fade-up">
-        <h2> Expériance</h2>
-        <p></p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 gx-lg-5">
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Ministee de commerce et de l'industrialisation Stage de 3 mois en manipulation de base de donnée et en gestion de projet
+    <!-- Education Section -->
+    <section id="diplomes" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 fade-in">
+          Diplômes et Formations
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="timeline-item fade-in">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Master 1 en Cours
               </h3>
-              <h4>3 mois</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Fashion Photography</h3>
-              <h4>$300.00</h4>
-            </div>
-          </div><
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Sports Photography</h3>
-              <h4>$200.00</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3></h3>
-              <h4></h4>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Wedding Photography</h3>
-              <h4>$500.00</h4>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="pricing-item d-flex justify-content-between">
-              <h3>Photojournalism</h3>
-              <h4>$200.00</h4>
-            </div>
-          </div> -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="container section-title" data-aos="fade-up"></div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="content px-xl-5">
-              <h2><span>Expériances </span><strong></strong></h2>
-              <p>
-                
+              <p class="text-primary font-medium mb-2">2024-2025</p>
+              <p class="text-gray-700">
+                Communication Numérique et Management du Projet. L'École de
+                Management et de l'Innovation Technologique Fianarantsoa (EMIT
+                Fianarantsoa).
               </p>
             </div>
           </div>
-
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="faq-container">
-              <div class="faq-item faq-active">
-                <h3><span class="num">1.</span> <span>Next generation Fianarantsoa</span></h3>
-                <div class="faq-content">
-                  <p>Formation en communication durant 3 mois.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">2.</span> <span>TRESOR PUBLIC DU VANGAINDRANO(Tahirimbolam-panjakana Malagasy)</span></h3>
-                <div class="faq-content">
-                  <p>Stagiaire en tant que responsable de communication au sein du tresor public du Vangaindrano 3 mois.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3><span class="num">3.</span> <span>Learning English practice Speaking</span></h3>
-                <div class="faq-content">
-                  <p>Cour Anglais durant 2 mois.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-             
-
+          <div class="timeline-item fade-in">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800">Licence</h3>
+              <p class="text-primary font-medium mb-2">2024</p>
+              <p class="text-gray-700">
+                Licence en Relations Publics et Communication Organisationnel.
+                L'École de Management et de l'Innovation Technologique
+                Fianarantsoa (EMIT Fianarantsoa).
+              </p>
             </div>
-
+          </div>
+          <div class="timeline-item fade-in">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Formation Licence 3
+              </h3>
+              <p class="text-primary font-medium mb-2">2023-2024</p>
+              <p class="text-gray-700">
+                Formation en Relations Publics et Communication Organisationnel
+                à l'EMIT Fianarantsoa.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item fade-in">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800">Licence 2</h3>
+              <p class="text-primary font-medium mb-2">2021-2023</p>
+              <p class="text-gray-700">
+                Formation en Relation Publics et Multimedia. L'École de
+                Management et de l'Innovation Technologique Fianarantsoa (EMIT
+                Fianarantsoa).
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item fade-in">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800">Licence 1</h3>
+              <p class="text-primary font-medium mb-2">2021-2022</p>
+              <p class="text-gray-700">
+                Formation en Relation Publics et Multimedia. L'École de
+                Management et de l'Innovation Technologique Fianarantsoa (EMIT
+                Fianarantsoa).
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item fade-in">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Baccalauréat Général Série A2
+              </h3>
+              <p class="text-primary font-medium mb-2">2021</p>
+              <p class="text-gray-700">
+                Diplôme de Baccalauréat Général au Lycée Catholique Lucien
+                Botovasoa (LCLB Vangaindrano).
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /Faq Section -->
-
-    <!-- 
-    <section id="testimonials" class="testimonials section accent-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
+    <!-- Experience Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 fade-in">
+          Expériences
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="timeline-item fade-in">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Next generation Fianarantsoa
+              </h3>
+              <p class="text-primary font-medium mb-2">3 mois</p>
+              <p class="text-gray-700">
+                Formation en communication durant 3 mois.
+              </p>
             </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="timeline-item fade-in">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800">
+                TRESOR PUBLIC DU VANGAINDRANO (Tahirimbolam-panjakana Malagasy)
+              </h3>
+              <p class="text-primary font-medium mb-2">3 mois</p>
+              <p class="text-gray-700">
+                Stagiaire en tant que responsable de communication au sein du
+                trésor public du Vangaindrano 3 mois.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item fade-in">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-gray-800">
+                Learning English practice Speaking
+              </h3>
+              <p class="text-primary font-medium mb-2">2 mois</p>
+              <p class="text-gray-700">Cours d'Anglais durant 2 mois.</p>
+            </div>
+          </div>
         </div>
-
       </div>
+    </section>
 
-    </section>-->
+    <!-- Portfolio Section -->
+    <section id="interets" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 fade-in">
+          Centre d'Intérêt et Passion
+        </h2>
+        <div class="mb-8 flex flex-wrap justify-center gap-4 fade-in">
+          <button
+            class="filter-btn active bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-6 !rounded-button font-medium whitespace-nowrap"
+            data-filter="all"
+          >
+            Tous
+          </button>
+          <button
+            class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-6 !rounded-button font-medium whitespace-nowrap"
+            data-filter="moi"
+          >
+            Moi
+          </button>
+          <button
+            class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-6 !rounded-button font-medium whitespace-nowrap"
+            data-filter="nourriture"
+          >
+            Nourriture préférée
+          </button>
+          <button
+            class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-6 !rounded-button font-medium whitespace-nowrap"
+            data-filter="activite"
+          >
+            Activités
+          </button>
+          <button
+            class="filter-btn bg-gray-100 hover:bg-gray-200 text-gray-800 py-2 px-6 !rounded-button font-medium whitespace-nowrap"
+            data-filter="podcast"
+          >
+            Podcasts
+          </button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="portfolio-item fade-in" data-category="moi">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="edson.jpeg"
+                alt="Edson"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Edson</h3>
+                <p class="text-gray-700">Portrait professionnel en extérieur</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="moi">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="randria2.jpg"
+                alt="Edson RANDRIARIMANANA"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Edson</h3>
+                <p class="text-gray-700">
+                  En plein travail sur un projet digital
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="moi">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="randria3.jpg"
+                alt="Edson RANDRIARIMANANA"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Edson</h3>
+                <p class="text-gray-700">
+                  Présentation d'un projet de communication
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="nourriture">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://readdy.ai/api/search-image?query=delicious%20traditional%20Malagasy%20food%2C%20romazava%20dish%20with%20rice%2C%20authentic%20cuisine%2C%20beautifully%20plated%2C%20high%20quality%20food%20photography%2C%20warm%20lighting&width=400&height=300&seq=5&orientation=landscape"
+                alt="Nourriture préférée"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Cuisine traditionnelle
+                </h3>
+                <p class="text-gray-700">
+                  Plat traditionnel malgache - Romazava
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="nourriture">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://readdy.ai/api/search-image?query=gourmet%20seafood%20platter%20with%20various%20fish%20and%20seafood%2C%20beautifully%20presented%2C%20restaurant%20quality%2C%20high-end%20cuisine%2C%20professional%20food%20photography&width=400&height=300&seq=6&orientation=landscape"
+                alt="Fruits de mer"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Fruits de mer
+                </h3>
+                <p class="text-gray-700">Plateau de fruits de mer variés</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="nourriture">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://readdy.ai/api/search-image?query=assortment%20of%20tropical%20fruits%20from%20Madagascar%2C%20including%20litchi%2C%20mango%2C%20passion%20fruit%2C%20arranged%20beautifully%2C%20vibrant%20colors%2C%20fresh%20and%20appetizing%2C%20high%20quality%20food%20photography&width=400&height=300&seq=7&orientation=landscape"
+                alt="Fruits tropicaux"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Fruits tropicaux
+                </h3>
+                <p class="text-gray-700">
+                  Assortiment de fruits tropicaux de Madagascar
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="activite">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://readdy.ai/api/search-image?query=exciting%20NBA%20basketball%20game%20action%2C%20professional%20players%20on%20court%2C%20dynamic%20movement%2C%20arena%20atmosphere%2C%20high%20quality%20sports%20photography&width=400&height=300&seq=8&orientation=landscape"
+                alt="Basketball NBA"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Basketball NBA
+                </h3>
+                <p class="text-gray-700">
+                  Passion pour le basketball professionnel
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="activite">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://readdy.ai/api/search-image?query=person%20playing%20basketball%20on%20outdoor%20court%2C%20sunset%20lighting%2C%20action%20shot%2C%20urban%20setting%2C%20high%20quality%20sports%20photography&width=400&height=300&seq=9&orientation=landscape"
+                alt="Basketball amateur"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Basketball amateur
+                </h3>
+                <p class="text-gray-700">Pratique du basketball en loisir</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="activite">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://readdy.ai/api/search-image?query=person%20hiking%20in%20beautiful%20Madagascar%20landscape%2C%20lush%20green%20scenery%2C%20mountains%20and%20unique%20flora%2C%20adventure%20photography%2C%20high%20quality%20image&width=400&height=300&seq=10&orientation=landscape"
+                alt="Randonnée"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Randonnée
+                </h3>
+                <p class="text-gray-700">Exploration des paysages malgaches</p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="podcast">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://readdy.ai/api/search-image?query=modern%20podcast%20recording%20studio%20setup%20with%20microphones%2C%20headphones%2C%20and%20audio%20equipment%2C%20professional%20media%20production%20environment%2C%20high%20quality%20image&width=400&height=300&seq=11&orientation=landscape"
+                alt="Studio podcast"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Studios de podcast
+                </h3>
+                <p class="text-gray-700">
+                  Équipement professionnel pour l'enregistrement
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="podcast">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://readdy.ai/api/search-image?query=person%20listening%20to%20podcast%20on%20smartphone%20with%20headphones%2C%20relaxed%20setting%2C%20coffee%20shop%20environment%2C%20lifestyle%20photography%2C%20high%20quality%20image&width=400&height=300&seq=12&orientation=landscape"
+                alt="Écoute podcast"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Écoute de podcasts
+                </h3>
+                <p class="text-gray-700">
+                  Moment de détente et d'apprentissage
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item fade-in" data-category="podcast">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://readdy.ai/api/search-image?query=entertainment%20industry%20podcast%20recording%20session%2C%20diverse%20group%20of%20people%20discussing%20entertainment%20topics%2C%20professional%20setting%2C%20high%20quality%20image&width=400&height=300&seq=13&orientation=landscape"
+                alt="Podcast divertissement"
+                class="w-full h-64 object-cover object-top"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Podcasts de divertissement
+                </h3>
+                <p class="text-gray-700">
+                  Discussions sur l'industrie du divertissement
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Adresse</h3>
-                  <p>Lot: 0307/760 B-Soanierana Fianarantsoa</p>
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 fade-in">
+          Contact
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-1 fade-in">
+              <div class="bg-white p-6 rounded-lg shadow-sm h-full">
+                <h3 class="text-xl font-semibold text-gray-800 mb-6">
+                  Mes Coordonnées
+                </h3>
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 flex items-center justify-center text-primary bg-blue-50 rounded-full mr-4"
+                    >
+                      <i class="ri-map-pin-line ri-lg"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-medium text-gray-800 mb-1">Adresse</h4>
+                      <p class="text-gray-700">
+                        Lot: 0307/760 B-Soanierana Fianarantsoa
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 flex items-center justify-center text-primary bg-blue-50 rounded-full mr-4"
+                    >
+                      <i class="ri-phone-line ri-lg"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-medium text-gray-800 mb-1">Téléphone</h4>
+                      <p class="text-gray-700">034 38 158 96 / 032 91 191 36</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 flex items-center justify-center text-primary bg-blue-50 rounded-full mr-4"
+                    >
+                      <i class="ri-mail-line ri-lg"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-medium text-gray-800 mb-1">Email</h4>
+                      <p class="text-gray-700">
+                        edsonrandiarimanana646@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 flex items-center justify-center text-primary bg-blue-50 rounded-full mr-4"
+                    >
+                      <i class="ri-time-line ri-lg"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-medium text-gray-800 mb-1">
+                        Disponibilité
+                      </h4>
+                      <p class="text-gray-700">Lundi - Vendredi: 9h - 18h</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Numéro Télephone</h3>
-                  <p>034 38 158 96 / 032 91 191 36</p>
-                </div>
+            </div>
+            <div class="md:col-span-2 fade-in">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-800 mb-6">
+                  Envoyez-moi un message
+                </h3>
+                <form id="contactForm">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                    <div>
+                      <label
+                        for="name"
+                        class="block text-gray-700 font-medium mb-2"
+                        >Nom complet</label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Veuillez entrer votre nom"
+                        class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="email"
+                        class="block text-gray-700 font-medium mb-2"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Veuillez entrer votre adresse email"
+                        class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <label
+                      for="subject"
+                      class="block text-gray-700 font-medium mb-2"
+                      >Objet</label
+                    >
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Objet de votre message"
+                      class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                      required
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label
+                      for="message"
+                      class="block text-gray-700 font-medium mb-2"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Votre message"
+                      class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary"
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full bg-primary text-white py-3 px-6 !rounded-button font-medium hover:bg-blue-600 transition-colors whitespace-nowrap"
+                  >
+                    Envoyer votre message
+                  </button>
+                </form>
               </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p>edsonrandiarimanana646@gmail.com</p>
-                </div>
-              </div>
-            </div><!-- End Info Item -->
-
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="Nom" class="form-control" placeholder="Veulliez entre votre nom" required="">
-            </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Veulliez entre votre Adresse Email" required="">
-            </div>
-
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="objet" placeholder="objet" required="">
-            </div>
-
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Chargement</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Votre message a été envoyé. Merci!</div>
-
-              <button type="submit">Envoyer votre message</button>
-            </div>
-
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-2xl font-semibold mb-2">RANDRIARIMANANA EDSON</h3>
+            <p class="text-gray-400">
+              Communication Numérique & Management du Projet
+            </p>
           </div>
-        </form><!-- End Contact Form -->
-
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 hover:bg-primary rounded-full transition-colors"
+            >
+              <i class="ri-linkedin-fill ri-lg"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 hover:bg-primary rounded-full transition-colors"
+            >
+              <i class="ri-twitter-fill ri-lg"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 hover:bg-primary rounded-full transition-colors"
+            >
+              <i class="ri-instagram-fill ri-lg"></i>
+            </a>
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center bg-gray-700 hover:bg-primary rounded-full transition-colors"
+            >
+              <i class="ri-facebook-fill ri-lg"></i>
+            </a>
+          </div>
+        </div>
+        <hr class="border-gray-700 my-8" />
+        <div class="text-center text-gray-400">
+          <p>© Copyright 2025 RANDRIARIMANANA EDSON. Tous droits réservés.</p>
+          <p>Dernière mise à jour : 8 Mai 2025</p>
+        </div>
       </div>
+    </footer>
 
-    </section><!-- /Contact Section -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
 
-  </main>
+        mobileMenuBtn.addEventListener("click", function () {
+          mobileMenu.classList.toggle("hidden");
+        });
 
-  <footer id="footer" class="footer accent-background">
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll("a");
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            mobileMenu.classList.add("hidden");
+          });
+        });
 
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Randriarimanana Edson</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-        <a href=""><i class="bi bi-whatsapp"></i></a>
-        <a href=""><i class="bi bi-tiktok "></i></a>
-      </div>
-  
-  </footer>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+        // Active navigation link based on scroll position
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        function setActiveLink() {
+          const scrollPosition = window.scrollY + 100;
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute("id");
 
-</body>
+            if (
+              scrollPosition >= sectionTop &&
+              scrollPosition < sectionTop + sectionHeight
+            ) {
+              navLinks.forEach((link) => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${sectionId}`) {
+                  link.classList.add("active");
+                }
+              });
+            }
+          });
+        }
 
+        window.addEventListener("scroll", setActiveLink);
+        setActiveLink();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animate progress bars
+        function animateProgressBars() {
+          const progressBars = document.querySelectorAll(".progress-bar-fill");
+          progressBars.forEach((bar) => {
+            const width = bar.getAttribute("data-width");
+            setTimeout(() => {
+              bar.style.width = width;
+            }, 200);
+          });
+        }
+
+        // Scroll animations
+        function handleScrollAnimations() {
+          const elements = document.querySelectorAll(
+            ".fade-in, .slide-in-left, .slide-in-right",
+          );
+
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            {
+              threshold: 0.1,
+            },
+          );
+
+          elements.forEach((element) => {
+            observer.observe(element);
+          });
+        }
+
+        // Portfolio filtering
+        function setupPortfolioFilters() {
+          const filterButtons = document.querySelectorAll(".filter-btn");
+          const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+          filterButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+              const filterValue = this.getAttribute("data-filter");
+
+              // Update active button
+              filterButtons.forEach((btn) => btn.classList.remove("active"));
+              this.classList.add("active");
+
+              // Filter items
+              portfolioItems.forEach((item) => {
+                if (
+                  filterValue === "all" ||
+                  item.getAttribute("data-category") === filterValue
+                ) {
+                  item.style.display = "block";
+                  setTimeout(() => {
+                    item.style.opacity = "1";
+                    item.style.transform = "translateY(0)";
+                  }, 100);
+                } else {
+                  item.style.opacity = "0";
+                  item.style.transform = "translateY(20px)";
+                  setTimeout(() => {
+                    item.style.display = "none";
+                  }, 300);
+                }
+              });
+            });
+          });
+        }
+
+        // Contact form handling
+        function setupContactForm() {
+          const contactForm = document.getElementById("contactForm");
+          const loadingOverlay = document.getElementById("loadingOverlay");
+          const successMessage = document.getElementById("successMessage");
+
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Show loading overlay
+            loadingOverlay.style.display = "flex";
+
+            // Simulate form submission
+            setTimeout(() => {
+              // Hide loading overlay
+              loadingOverlay.style.opacity = "0";
+              setTimeout(() => {
+                loadingOverlay.style.display = "none";
+
+                // Show success message
+                successMessage.classList.add("show");
+
+                // Reset form
+                contactForm.reset();
+
+                // Hide success message after 3 seconds
+                setTimeout(() => {
+                  successMessage.classList.remove("show");
+                }, 3000);
+              }, 500);
+            }, 1500);
+          });
+        }
+
+        // Initialize all functions
+        animateProgressBars();
+        handleScrollAnimations();
+        setupPortfolioFilters();
+        setupContactForm();
+
+        // Hide loading overlay when page is loaded
+        const loadingOverlay = document.getElementById("loadingOverlay");
+        setTimeout(() => {
+          loadingOverlay.style.opacity = "0";
+          setTimeout(() => {
+            loadingOverlay.style.display = "none";
+          }, 500);
+        }, 1000);
+      });
+    </script>
+  </body>
 </html>
